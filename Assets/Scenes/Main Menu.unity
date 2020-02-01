@@ -4263,7 +4263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Totally Epic Game Title
+  m_Text: Iterate
 --- !u!222 &2062377908
 CanvasRenderer:
   m_ObjectHideFlags: 0
