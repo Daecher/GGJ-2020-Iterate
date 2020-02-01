@@ -11,6 +11,8 @@ public class IteratorController : MonoBehaviour
     public bool playing = false;
     Transform head;
 
+    float countdownRate = 0.01f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,13 +35,38 @@ public class IteratorController : MonoBehaviour
         transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        StartCoroutine(CycleCountdown(20f));
     }
 
     public void EndCycle()
     {
+        playing = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Destroy(this.gameObject);
+        IterationManager.Instance.Ending(
+            transform.GetChild(0).rotation,
+            transform.GetChild(0).position);
+    }
+
+    IEnumerator CycleCountdown(float timeRemaining)
+    {
+        var tickedTime = timeRemaining;
+        yield return new WaitForSecondsRealtime(countdownRate);
+        tickedTime -= countdownRate;
+
+        if (tickedTime <= 0)
+        {
+            Debug.Log("Death");
+            IterationManager.Instance.SetCountdownText(0);
+            EndCycle();
+        }
+        else
+        {
+            IterationManager.Instance.SetCountdownText(tickedTime);
+            StartCoroutine(CycleCountdown(tickedTime));
+        }
+
     }
 
     void PlayerLook()
