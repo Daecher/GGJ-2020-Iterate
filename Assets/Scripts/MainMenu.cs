@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 	public SceneTransitionScript transition;
 	public GameObject main;
 	public GameObject settings;
+    public GameObject mainCanvas;
+    public GameObject iteratorCanvas;
 	public Slider music;
 	public Slider sfx;
 
@@ -25,8 +27,15 @@ public class MainMenu : MonoBehaviour
 
 	public void StartGame()
 	{
-		transition.GoFade();
-	}
+        iteratorCanvas.SetActive(true);
+        mainCanvas.SetActive(false);
+    }
+
+    public void BackToMenu()
+    {
+        iteratorCanvas.SetActive(false);
+        mainCanvas.SetActive(true);
+    }
 
 	public void QuitGame()
 	{

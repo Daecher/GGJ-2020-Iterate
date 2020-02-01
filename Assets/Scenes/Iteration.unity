@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531c89f19c6243046909de673282b776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 754977364856592033}
   countdownText: {fileID: 2035220418}
   mainCamera: {fileID: 2124611044}
 --- !u!4 &237316533
@@ -1232,22 +1233,34 @@ PrefabInstance:
     - target: {fileID: 7047413127244073074, guid: 77e972d5ab4ab87479925cff05294ae6,
         type: 3}
       propertyPath: scene
-      value: TemplateMenuScene
+      value: IterateMainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7047413127244073074, guid: 77e972d5ab4ab87479925cff05294ae6,
         type: 3}
       propertyPath: loadToColor.r
-      value: 0
+      value: 0.078431375
       objectReference: {fileID: 0}
     - target: {fileID: 7047413127244073074, guid: 77e972d5ab4ab87479925cff05294ae6,
         type: 3}
       propertyPath: loadToColor.g
-      value: 0
+      value: 0.101960786
       objectReference: {fileID: 0}
     - target: {fileID: 7047413127244073074, guid: 77e972d5ab4ab87479925cff05294ae6,
         type: 3}
       propertyPath: loadToColor.b
-      value: 0
+      value: 0.25490198
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e972d5ab4ab87479925cff05294ae6, type: 3}
+--- !u!114 &754977364856592033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7047413127244073074, guid: 77e972d5ab4ab87479925cff05294ae6,
+    type: 3}
+  m_PrefabInstance: {fileID: 754977364856592032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c276526052baa0e438fc0442989ca190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

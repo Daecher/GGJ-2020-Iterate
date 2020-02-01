@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GenerateIterator : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GenerateIterator : MonoBehaviour
     public Transform playerRoot;
     public Transform playerCamera;
 
+    public InputField seedInput;
+    public Button beginButton;
+
     GameObject generatedHead;
     GameObject generatedBody;
     Material generatedMaterial;
@@ -19,7 +23,7 @@ public class GenerateIterator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Generate(seed);
+        //Generate(seed);
     }
 
     // Update is called once per frame
@@ -28,7 +32,7 @@ public class GenerateIterator : MonoBehaviour
 
     }
 
-    public void Generate(string stringSeed)
+    public void Generate()
     {
         /*
          * Iterators have two generated parts- their head and body. Each
@@ -37,17 +41,25 @@ public class GenerateIterator : MonoBehaviour
          *  (but not the head) as well as their hands/grabbers/whatever.
          * */
 
+        var stringSeed = seedInput.text;
+
         playerCamera.transform.parent = playerRoot;
         Destroy(generatedHead);
         Destroy(generatedBody);
 
-        Debug.Log(stringSeed);
+        //Debug.Log(stringSeed);
         stringSeed.GetHashCode();
         Random.InitState(stringSeed.GetHashCode());
-        Debug.Log(Random.Range(
+        /*Debug.Log(Random.Range(
             0,
             Mathf.FloorToInt(Mathf.Pow(2, 16))
-        ));
+        ));*/
+
+        // VERY necessary
+        Random.Range(
+            0,
+            Mathf.FloorToInt(Mathf.Pow(2, 16))
+        );
 
         // Generate head
         // Pick head shape

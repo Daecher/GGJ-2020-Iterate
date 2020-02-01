@@ -7,6 +7,7 @@ public class IterationManager : MonoBehaviour
 {
     public static IterationManager Instance { get; private set; }
 
+    public SceneTransitionScript transition;
     public Text countdownText;
     public Camera mainCamera;
 
@@ -46,5 +47,12 @@ public class IterationManager : MonoBehaviour
         mainCamera.gameObject.SetActive(true);
         mainCamera.transform.rotation = lastLook;
         mainCamera.transform.position = lastPos;
+        StartCoroutine(ReturnToMenu(3f));
+    }
+
+    IEnumerator ReturnToMenu(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        transition.GoFade();
     }
 }
