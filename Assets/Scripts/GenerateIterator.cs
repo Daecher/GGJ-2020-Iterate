@@ -21,20 +21,13 @@ public class GenerateIterator : MonoBehaviour
     {
         if (Input.GetKeyDown("r"))
         {
-            
-            Debug.Log(Random.state);
-            int convertedString = 0;
-            string newStringSeed = "";
-            foreach(char c in stringSeed)
-            {
-                Debug.Log(c);
-                convertedString = c-96;
-                Debug.Log(convertedString);
-                newStringSeed += convertedString.ToString();
-            }
-            Debug.Log(int.Parse(newStringSeed));
-            Random.InitState(int.Parse(newStringSeed));
-            Debug.Log(Random.Range(1, 10000));
+            Debug.Log(stringSeed);
+            stringSeed.GetHashCode();
+            Random.InitState(stringSeed.GetHashCode());
+            Debug.Log(Random.Range(
+                0, 
+                Mathf.FloorToInt(Mathf.Pow(2, 16))
+            ));
         }
     }
 
