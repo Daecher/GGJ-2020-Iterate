@@ -6,9 +6,11 @@ public class GenerateIterator : MonoBehaviour
 {
     public List<GameObject> templateHeads;
     public List<GameObject> templateBodies;
-    public string stringSeed = "";
+    public string seed = "";
     public Transform headLocation;
     public Transform bodyLocation;
+    public Transform playerRoot;
+    public Transform playerCamera;
 
     GameObject generatedHead;
     GameObject generatedBody;
@@ -17,19 +19,16 @@ public class GenerateIterator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Generate(seed);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("r"))
-        {
-            Generate();
-        }
+
     }
 
-    void Generate()
+    public void Generate(string stringSeed)
     {
         /*
          * Iterators have two generated parts- their head and body. Each
@@ -37,6 +36,10 @@ public class GenerateIterator : MonoBehaviour
          * The player camera should always be able to see the body
          *  (but not the head) as well as their hands/grabbers/whatever.
          * */
+
+        playerCamera.transform.parent = playerRoot;
+        Destroy(generatedHead);
+        Destroy(generatedBody);
 
         Debug.Log(stringSeed);
         stringSeed.GetHashCode();
@@ -58,9 +61,12 @@ public class GenerateIterator : MonoBehaviour
             );
         Color colorChoice = Random.ColorHSV();
 
-        var head = Instantiate(templateHeads[headChoice], headLocation.transform.position, Quaternion.identity);
-        head.GetComponent<Renderer>().material.color = colorChoice;
-        head.transform.localScale = headScale;
+        generatedHead = Instantiate(templateHeads[headChoice], headLocation.transform.position, Quaternion.identity);
+        generatedHead.GetComponent<Renderer>().material.color = colorChoice;
+        generatedHead.transform.localScale = headScale;
+        generatedHead.transform.parent = playerRoot;
+        playerCamera.transform.parent = generatedHead.transform;
+        playerCamera.localPosition = Vector3.zero;
 
         // Generate body
         // Pick body color
@@ -72,8 +78,9 @@ public class GenerateIterator : MonoBehaviour
             Random.Range(0.5f, 1.5f),
             Random.Range(0.5f, 1.5f)
             );
-        var body = Instantiate(templateBodies[bodyChoice], bodyLocation.position, Quaternion.identity);
-        body.GetComponent<Renderer>().material.color = colorChoice;
-        body.transform.localScale = bodyScale;
+        generatedBody = Instantiate(templateBodies[bodyChoice], bodyLocation.position, Quaternion.identity);
+        generatedBody.GetComponent<Renderer>().material.color = colorChoice;
+        generatedBody.transform.localScale = bodyScale;
+        generatedBody.transform.parent = playerRoot;
     }
 }
