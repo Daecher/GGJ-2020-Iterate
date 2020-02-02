@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1468203407112647255}
   - component: {fileID: 1468203407112647254}
   m_Layer: 0
-  m_Name: Receptacle-Wired
+  m_Name: Receptacle-Wired 1
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf50f9aa144e049990f047b653d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receptacleType: Cube
+  receptacleType: Cube 2
   receptaclePos: {fileID: 1468203406729262212}
 --- !u!1001 &259729334219939822
 PrefabInstance:

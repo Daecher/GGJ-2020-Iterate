@@ -28,6 +28,7 @@ public class RepairReceptacle : MonoBehaviour
     {
         Debug.Log("Placing part");
         Debug.Log(part.name);
+        SpawnManager.Instance.RepairOccurred(this.gameObject, part);
         part.transform.parent = receptaclePos;
         part.transform.position = receptaclePos.position;
         part.transform.rotation = receptaclePos.rotation;
