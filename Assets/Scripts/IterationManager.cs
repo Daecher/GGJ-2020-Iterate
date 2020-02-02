@@ -10,6 +10,7 @@ public class IterationManager : MonoBehaviour
     public SceneTransitionScript transition;
     public Text countdownText;
     public Camera mainCamera;
+    public Transform playerSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -54,5 +55,10 @@ public class IterationManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(delay);
         transition.GoFade();
+    }
+
+    public Transform GetPlayerSpawn()
+    {
+        return playerSpawn;
     }
 }

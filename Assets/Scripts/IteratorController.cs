@@ -102,7 +102,7 @@ public class IteratorController : MonoBehaviour
         var currentHeadRotation = transform.GetChild(0).localEulerAngles;
         currentBodyRotation.y += Input.GetAxis("Mouse X") * turnSpeed;
         transform.localEulerAngles = currentBodyRotation;
-        float nextTurnFrame = currentHeadRotation.x - (Input.GetAxis("Mouse Y") * turnSpeed);
+        float nextTurnFrame = currentHeadRotation.x - (Input.GetAxis("Mouse Y") * -turnSpeed);
         if (nextTurnFrame > 180) nextTurnFrame = 360 - nextTurnFrame;
         else if (nextTurnFrame < -180) nextTurnFrame = 360 + nextTurnFrame;
         if (nextTurnFrame < maxZRotation && nextTurnFrame > minZRotation)

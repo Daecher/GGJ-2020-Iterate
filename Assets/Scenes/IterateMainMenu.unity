@@ -6859,7 +6859,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1059268059}
   - component: {fileID: 1059268060}
-  - component: {fileID: 1059268061}
   - component: {fileID: 1059268062}
   m_Layer: 9
   m_Name: PlayerRoot
@@ -6875,15 +6874,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059268058}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.5, y: 56, z: 53.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 893746282}
   - {fileID: 571495645}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1059268060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6903,103 +6902,6 @@ MonoBehaviour:
   playing: 0
   holdingPos: {fileID: 893746282}
   reticleText: {fileID: 15312785}
---- !u!82 &1059268061
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059268058}
-  m_Enabled: 0
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24324684, guid: 0ac7fb39e445048d89688f69c2a1839a,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!54 &1059268062
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8809,12 +8711,27 @@ MonoBehaviour:
   startupKoans:
   - The Sparkmother watches...
   - The Great Machine hums...
+  - "A life spending one\u2019s worth is a life worth spending."
+  - Built up from the earth, into nothingness.
+  - She is a whole, yet equal to her parts.
+  - The Great Machine beckons.
+  - Child of Sparkmother, glorious creation be.
+  - '...'
   beginKoans:
   - All the Sparkmother blesses with life, she blesses with purpose.
+  - 'Steel of my steel and oil of my oil. Be my eyes, my feet, and my hands. '
+  - Turn, turn, turn. Hand over hand, tooth over tooth. Her bell yearns to ring once
+    more.
+  - 'Again the light waxes, filling the void of slumber with countless photons. '
   deathSuccessKoans:
   - 
   deathNeutralKoans:
   - 'As all songs begin, So every song must conclude with a single note. '
+  - A cog breaks, and the artificer is to blame. Be you the cog, or the artificer?
+  - A neverending Spark, standing atop the mountain.
+  - Awake, yet still. The Sparkmother watches.
+  - A continuous cycle, bending in the wind.
+  - '...'
   TitleFlavor: {fileID: 1318298946}
   StartText: {fileID: 888756024}
   DeathText: {fileID: 410891142}
@@ -11708,8 +11625,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711488757}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.66, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.5, y: 56, z: 53.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1136211381}
