@@ -47,7 +47,7 @@ public class IterationManager : MonoBehaviour
         mainCamera.gameObject.SetActive(true);
         mainCamera.transform.rotation = lastLook;
         mainCamera.transform.position = lastPos;
-        StartCoroutine(ReturnToMenu(3f));
+        StartCoroutine(ReturnToMenu(8f));
     }
 
     IEnumerator ReturnToMenu(float delay)

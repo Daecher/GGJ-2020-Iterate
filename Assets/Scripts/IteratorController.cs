@@ -51,6 +51,7 @@ public class IteratorController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         StartCoroutine(CycleCountdown(20f));
+        KoanManager.Instance.TriggerBegin();
     }
 
     public void EndCycle()
@@ -72,6 +73,7 @@ public class IteratorController : MonoBehaviour
         IterationManager.Instance.Ending(
             transform.GetChild(0).rotation,
             transform.GetChild(0).position);
+        KoanManager.Instance.TriggerDeath();
     }
 
     IEnumerator CycleCountdown(float timeRemaining)

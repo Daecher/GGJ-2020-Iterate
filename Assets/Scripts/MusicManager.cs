@@ -13,7 +13,7 @@ public class MusicManager : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
-            Debug.LogWarning("There are more than one IterationManagers" +
+            Debug.LogWarning("There are more than one MusicManagers" +
                 " in the scene. Destroying this...");
         }
         else Instance = this;

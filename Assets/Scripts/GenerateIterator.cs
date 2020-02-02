@@ -25,6 +25,7 @@ public class GenerateIterator : MonoBehaviour
     void Start()
     {
         //Generate(seed);
+        KoanManager.Instance.TriggerStartup();
     }
 
     // Update is called once per frame
