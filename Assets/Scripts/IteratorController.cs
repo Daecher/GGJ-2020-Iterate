@@ -131,6 +131,23 @@ public class IteratorController : MonoBehaviour
         }
     }
 
+    public void DetectReceptacle(GameObject obj)
+    {
+        if (Input.GetMouseButton(0) && heldObject != null)
+        {
+            if (obj.GetComponent<RepairReceptacle>().GetReceptacleType()
+                == heldObject.GetComponent<RepairPart>().GetPartType())
+            {
+                var transColor = heldObject.GetComponent<Renderer>().material.color;
+                transColor.a = 1f;
+                heldObject.GetComponent<Renderer>().material.color = transColor;
+
+                obj.GetComponent<RepairReceptacle>().PlacePart(heldObject);
+                heldObject = null;
+            }
+        }
+    }
+
     public void PartOperation()
     {
         var objRB = heldObject.GetComponent<Rigidbody>();
