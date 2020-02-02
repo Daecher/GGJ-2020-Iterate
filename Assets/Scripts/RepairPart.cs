@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class RepairPart : MonoBehaviour
 {
-    [SerializeField]
-    string partType;
-
+    public string partType;
+    bool repaired = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +21,15 @@ public class RepairPart : MonoBehaviour
     public string GetPartType()
     {
         return partType;
+    }
+
+    public void Repair()
+    {
+        repaired = true;
+    }
+
+    public bool GetRepaired()
+    {
+        return repaired;
     }
 }

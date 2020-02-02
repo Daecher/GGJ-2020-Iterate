@@ -5,6 +5,8 @@ using UnityEngine;
 public class RepairReceptacle : MonoBehaviour
 {
     public string receptacleType;
+    public Transform receptaclePos;
+    bool repaired = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,24 @@ public class RepairReceptacle : MonoBehaviour
 
     public void PlacePart(GameObject part)
     {
-        part.transform.parent = transform;
-        part.GetComponent<DetectPart>().enabled = false;
-        this.GetComponent<DetectPart>().enabled = false;
+        Debug.Log("Placing part");
+        Debug.Log(part.name);
+        part.transform.parent = receptaclePos;
+        part.transform.position = receptaclePos.position;
+        part.transform.rotation = receptaclePos.rotation;
+        part.GetComponent<RepairPart>().Repair();
+        part.GetComponent<RepairPart>().enabled = false;
+        Repair();
         this.enabled = false;
+    }
+
+    public void Repair()
+    {
+        repaired = true;
+    }
+
+    public bool GetRepaired()
+    {
+        return repaired;
     }
 }
