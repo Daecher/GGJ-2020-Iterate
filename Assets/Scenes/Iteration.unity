@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8fbbfd06f82e54f89394a36b94066c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partType: cube
+  partType: Cube
 --- !u!1 &1061079625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8fbbfd06f82e54f89394a36b94066c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partType: cube
+  partType: Cube
 --- !u!23 &1184176662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8fbbfd06f82e54f89394a36b94066c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partType: cube
+  partType: Cube
 --- !u!23 &1692935961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2007,7 +2007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8fbbfd06f82e54f89394a36b94066c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partType: cube
+  partType: Cube
 --- !u!23 &1968360235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2484,6 +2484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468203407112647254, guid: 1865549ac60dc1f43b5242ac08340f68,
+        type: 3}
+      propertyPath: receptacleType
+      value: Cube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1865549ac60dc1f43b5242ac08340f68, type: 3}

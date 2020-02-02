@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using cakeslice;
 
 public class IteratorController : MonoBehaviour
@@ -11,6 +12,7 @@ public class IteratorController : MonoBehaviour
     public float moveSpeed;
     public bool playing = false;
     public Transform holdingPos;
+    public Text reticleText;
 
     Transform head;
     GameObject heldObject = null;
@@ -118,6 +120,7 @@ public class IteratorController : MonoBehaviour
     public void DetectedPart(GameObject obj)
     {
         var objRB = obj.GetComponent<Rigidbody>();
+        
         if (Input.GetMouseButton(0) && heldObject == null)
         {
             obj.transform.parent = holdingPos;
