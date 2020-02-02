@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public static MusicManager Instance { get; private set; }
+    AudioSource audio;
+    public List<AudioClip> clips;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            Debug.LogWarning("There are more than one IterationManagers" +
+                " in the scene. Destroying this...");
+        }
+        else Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        audio = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (audio.isPlaying == false)
+        {
+            audio.clip = clips[Random.Range(0, clips.Count)];
+            audio.Play();
+        }
     }
 }
