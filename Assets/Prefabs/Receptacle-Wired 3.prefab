@@ -30,7 +30,7 @@ Transform:
   m_Father: {fileID: 7858443734585507022}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5173713771406194802
+--- !u!1 &5635650295290427520
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,8 +38,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 831209824079022101}
-  - component: {fileID: 8685951789173196808}
+  - component: {fileID: 8641680857026285260}
+  - component: {fileID: 5899116828232217923}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -47,31 +47,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &831209824079022101
+--- !u!4 &8641680857026285260
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5173713771406194802}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.45, y: 1.44, z: 5.5}
+  m_GameObject: {fileID: 5635650295290427520}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4500008, y: 1.4400014, z: 5.500001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7858443734585507022}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &8685951789173196808
+--- !u!108 &5899116828232217923
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5173713771406194802}
+  m_GameObject: {fileID: 5635650295290427520}
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0, g: 1, b: 0.11084986, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.014307022, a: 1}
   m_Intensity: 4.17
   m_Range: 10
   m_SpotAngle: 30
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 1468203407112647255}
   - component: {fileID: 1468203407112647254}
   m_Layer: 0
-  m_Name: Receptacle-Wired
+  m_Name: Receptacle-Wired 3
   m_TagString: Receptacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,7 +166,7 @@ Transform:
   - {fileID: 9218417355188267672}
   - {fileID: 7606026582897826215}
   - {fileID: 3774854602535667475}
-  - {fileID: 831209824079022101}
+  - {fileID: 8641680857026285260}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf50f9aa144e049990f047b653d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receptacleType: Cube
+  receptacleType: Cube 2
   receptaclePos: {fileID: 1468203406729262212}
 --- !u!1001 &259729334219939822
 PrefabInstance:
