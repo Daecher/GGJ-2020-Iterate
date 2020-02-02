@@ -7,8 +7,9 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager Instance { get; private set; }
 
     public Transform RLocationParent;
+    public Transform PLocationParent;
     List<Transform> receptacleLocations = new List<Transform>();
-    public List<Transform> partLocations;
+    List<Transform> partLocations = new List<Transform>();
     public List<GameObject> receptacles;
     public List<GameObject> parts;
     public int NParts;
@@ -66,7 +67,12 @@ public class SpawnManager : MonoBehaviour
         // Spawn up to 3 parts (until part list is 3)
         // Add them to the existing part list
         List<string> recTypes = new List<string>();
-        foreach(GameObject r in existingReceptacles)
+        for (var j = 0; j < PLocationParent.childCount; j++)
+        {
+            partLocations.Add(PLocationParent.GetChild(j));
+        }
+
+        foreach (GameObject r in existingReceptacles)
         {
             recTypes.Add(r.GetComponent<RepairReceptacle>().GetReceptacleType());
         }
