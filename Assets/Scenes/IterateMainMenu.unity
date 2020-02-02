@@ -6898,7 +6898,7 @@ MonoBehaviour:
   maxZRotation: 55
   minZRotation: -60
   turnSpeed: 2
-  moveSpeed: 1
+  moveSpeed: 2.5
   playing: 0
   holdingPos: {fileID: 893746282}
   reticleText: {fileID: 15312785}
