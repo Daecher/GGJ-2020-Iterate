@@ -13,6 +13,7 @@ public class IteratorController : MonoBehaviour
 
     Transform head;
     GameObject heldObject = null;
+    Rigidbody rb;
 
     float countdownRate = 0.01f;
     float throwStrength = 0.0f;
@@ -22,18 +23,22 @@ public class IteratorController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if (heldObject != null) PartOperation();
+    }
+
+    void FixedUpdate()
     {
         if (playing == true)
         {
             PlayerLook();
             PlayerMove();
         }
-
-        if (heldObject != null) PartOperation();
     }
 
     public void StartCycle()
@@ -104,8 +109,9 @@ public class IteratorController : MonoBehaviour
 
     void PlayerMove()
     {
-        transform.localPosition += transform.right * moveSpeed/10f * Input.GetAxis("Horizontal");
-        transform.localPosition += transform.forward * moveSpeed/10f * Input.GetAxis("Vertical");
+        rb.velocity += transform.right * moveSpeed * Input.GetAxis("Horizontal");
+        rb.velocity += transform.forward * moveSpeed * Input.GetAxis("Vertical");
+        rb.velocity += transform.up * moveSpeed * (Input.GetAxis("Jump") - Input.GetAxis("Descend"));
     }
 
     public void DetectedPart(GameObject obj)
