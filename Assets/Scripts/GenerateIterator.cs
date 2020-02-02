@@ -12,9 +12,10 @@ public class GenerateIterator : MonoBehaviour
     public Transform bodyLocation;
     public Transform playerRoot;
     public Transform playerCamera;
+    public Transform holdingPos;
 
     public InputField seedInput;
-    public Button beginButton;
+    public Button beginGame;
 
     GameObject generatedHead;
     GameObject generatedBody;
@@ -40,6 +41,7 @@ public class GenerateIterator : MonoBehaviour
          * The player camera should always be able to see the body
          *  (but not the head) as well as their hands/grabbers/whatever.
          * */
+        beginGame.interactable = true;
 
         var stringSeed = seedInput.text;
 
@@ -94,5 +96,6 @@ public class GenerateIterator : MonoBehaviour
         generatedBody.GetComponent<Renderer>().material.color = colorChoice;
         generatedBody.transform.localScale = bodyScale;
         generatedBody.transform.parent = playerRoot;
+        holdingPos.transform.parent = generatedBody.transform;
     }
 }

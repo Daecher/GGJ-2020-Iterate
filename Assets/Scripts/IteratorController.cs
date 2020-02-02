@@ -9,9 +9,14 @@ public class IteratorController : MonoBehaviour
     public float turnSpeed;
     public float moveSpeed;
     public bool playing = false;
+    public Transform holdingPos;
+
     Transform head;
+    GameObject heldObject = null;
 
     float countdownRate = 0.01f;
+    float throwStrength = 0.0f;
+    float throwRate = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +32,8 @@ public class IteratorController : MonoBehaviour
             PlayerLook();
             PlayerMove();
         }
+
+        if (heldObject != null) PartOperation();
     }
 
     public void StartCycle()
@@ -40,6 +47,16 @@ public class IteratorController : MonoBehaviour
 
     public void EndCycle()
     {
+        if (heldObject != null)
+        {
+            var objRB = heldObject.GetComponent<Rigidbody>();
+            var transColor = heldObject.GetComponent<Renderer>().material.color;
+            transColor.a = 1f;
+            heldObject.GetComponent<Renderer>().material.color = transColor;
+            heldObject.transform.parent = null;
+            objRB.constraints = RigidbodyConstraints.None;
+            heldObject = null;
+        }
         playing = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -89,5 +106,48 @@ public class IteratorController : MonoBehaviour
     {
         transform.localPosition += transform.right * moveSpeed/10f * Input.GetAxis("Horizontal");
         transform.localPosition += transform.forward * moveSpeed/10f * Input.GetAxis("Vertical");
+    }
+
+    public void DetectedPart(GameObject obj)
+    {
+        var objRB = obj.GetComponent<Rigidbody>();
+        if (Input.GetMouseButton(0) && heldObject == null)
+        {
+            obj.transform.parent = holdingPos;
+            obj.transform.position = obj.transform.parent.position;
+            obj.transform.localRotation = Quaternion.identity;
+            objRB.constraints = RigidbodyConstraints.FreezeAll;
+            heldObject = obj;
+            var transColor = heldObject.GetComponent<Renderer>().material.color;
+            transColor.a = 0.5f;
+            heldObject.GetComponent<Renderer>().material.color = transColor;
+        }
+    }
+
+    public void PartOperation()
+    {
+        var objRB = heldObject.GetComponent<Rigidbody>();
+
+        if (Input.GetMouseButtonUp(1))
+        {
+            heldObject.transform.parent = null;
+            objRB.constraints = RigidbodyConstraints.None;
+            objRB.velocity = transform.GetChild(0).forward * throwStrength;
+            var transColor = heldObject.GetComponent<Renderer>().material.color;
+            transColor.a = 1f;
+            heldObject.GetComponent<Renderer>().material.color = transColor;
+            heldObject = null;
+            throwStrength = 0f;
+        }
+
+        else if (Input.GetMouseButton(1))
+        {
+            IncreaseThrowStrength();
+        }
+    }
+
+    void IncreaseThrowStrength()
+    {
+        if (throwStrength < 30) throwStrength += throwRate;
     }
 }
