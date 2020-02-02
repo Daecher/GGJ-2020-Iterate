@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11495123, g: 0.15534809, b: 0.38631657, a: 1}
+  m_IndirectSpecularColor: {r: 0.114685364, g: 0.1550343, b: 0.38757798, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bollard_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1647645783036668, guid: 658629d9d47ea0544ab99138c31d53ad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4230815967543682, guid: 658629d9d47ea0544ab99138c31d53ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.089
@@ -203,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Box_With_Swing_Door_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1474796219620234, guid: e398dc49f18315d4a91cd5c8f007781f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4488888995585148, guid: e398dc49f18315d4a91cd5c8f007781f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 121.54
@@ -258,6 +266,10 @@ PrefabInstance:
     - target: {fileID: 4488888995585148, guid: e398dc49f18315d4a91cd5c8f007781f, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972759935353266, guid: e398dc49f18315d4a91cd5c8f007781f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e398dc49f18315d4a91cd5c8f007781f, type: 3}
@@ -375,6 +387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Pillar_T1_1x1x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1331742665318706, guid: 6b45c7b80357f5940bc791aed41da504, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4669569373127692, guid: 6b45c7b80357f5940bc791aed41da504, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29
@@ -480,6 +496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.39
@@ -578,6 +598,10 @@ PrefabInstance:
     - target: {fileID: 1965634058217062, guid: 6198a6a273cb1e047b87226b17892849, type: 3}
       propertyPath: m_Name
       value: Block_Wall_Pillar_Cap2_T2_1x1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965634058217062, guid: 6198a6a273cb1e047b87226b17892849, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4227954142839598, guid: 6198a6a273cb1e047b87226b17892849, type: 3}
       propertyPath: m_LocalPosition.x
@@ -710,6 +734,10 @@ PrefabInstance:
     - target: {fileID: 1100079446154594, guid: 84ff94d7efbe62d49a0f8e5332768157, type: 3}
       propertyPath: m_Name
       value: Pipe_Thick_Bend_2x1x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100079446154594, guid: 84ff94d7efbe62d49a0f8e5332768157, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4969690890906114, guid: 84ff94d7efbe62d49a0f8e5332768157, type: 3}
       propertyPath: m_LocalPosition.x
@@ -875,6 +903,10 @@ PrefabInstance:
     - target: {fileID: 1331742665318706, guid: 6b45c7b80357f5940bc791aed41da504, type: 3}
       propertyPath: m_Name
       value: Block_Pillar_T1_1x1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331742665318706, guid: 6b45c7b80357f5940bc791aed41da504, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4669569373127692, guid: 6b45c7b80357f5940bc791aed41da504, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1105,6 +1137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate_2x1x1_Large
       objectReference: {fileID: 0}
+    - target: {fileID: 1241080421885466, guid: 7438066611a179a438f7b136cf58f48b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4473417692703270, guid: 7438066611a179a438f7b136cf58f48b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.677727
@@ -1175,6 +1211,10 @@ PrefabInstance:
     - target: {fileID: 1491501175582096, guid: 86e59d579c1432e4a9b0697e84670969, type: 3}
       propertyPath: m_Name
       value: Skip_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491501175582096, guid: 86e59d579c1432e4a9b0697e84670969, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4196826731335058, guid: 86e59d579c1432e4a9b0697e84670969, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1251,6 +1291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Pillar_T1_1x3x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1413428019009226, guid: 633d5a771e91ca244b28a23e9fb5330a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4084242651501196, guid: 633d5a771e91ca244b28a23e9fb5330a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.319002
@@ -1319,6 +1363,10 @@ PrefabInstance:
     - target: {fileID: 1057993018033486, guid: c1f4369156bfcd440b1ead615157a2f5, type: 3}
       propertyPath: m_Name
       value: Tube_Hole_Large_8x8x12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057993018033486, guid: c1f4369156bfcd440b1ead615157a2f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4635544924935420, guid: c1f4369156bfcd440b1ead615157a2f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1391,6 +1439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pebbles_Small_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1712537248157022, guid: 759ebc4812737b145aa4903f7b68a5d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4769637757903516, guid: 759ebc4812737b145aa4903f7b68a5d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 186.28671
@@ -1462,6 +1514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Abstract_Antena_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1416189535684578, guid: ec6a728b691981e40b9c3ad7930884b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4367951375747378, guid: ec6a728b691981e40b9c3ad7930884b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -51.133316
@@ -1532,6 +1588,10 @@ PrefabInstance:
     - target: {fileID: 1843280205174414, guid: 6b09ca8392d3784448a45df6c604047e, type: 3}
       propertyPath: m_Name
       value: Block_Wall_Pillar_T1_1x1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843280205174414, guid: 6b09ca8392d3784448a45df6c604047e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4122255010914090, guid: 6b09ca8392d3784448a45df6c604047e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1854,6 +1914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Block_1x1x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1716135279360626, guid: a3415282f7fbb604d93853abe707b2c3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4628116484741784, guid: a3415282f7fbb604d93853abe707b2c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -79.61
@@ -2020,7 +2084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &527195794
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2096,6 +2160,10 @@ PrefabInstance:
     - target: {fileID: 1649965631608676, guid: 579fcb7352972bc488d9a361af4ed7bc, type: 3}
       propertyPath: m_Name
       value: Rock_Block_1x2x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649965631608676, guid: 579fcb7352972bc488d9a361af4ed7bc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4272531391341590, guid: 579fcb7352972bc488d9a361af4ed7bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2288,6 +2356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Box_With_Swing_Door_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1636790252797892, guid: 52dab349a73eae54bb9f030ee8689afe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4095252971441582, guid: 52dab349a73eae54bb9f030ee8689afe, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.825
@@ -2340,6 +2412,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.1572022
       objectReference: {fileID: 0}
+    - target: {fileID: 1627444717390702, guid: 52dab349a73eae54bb9f030ee8689afe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52dab349a73eae54bb9f030ee8689afe, type: 3}
 --- !u!4 &594494571 stripped
@@ -2358,6 +2434,10 @@ PrefabInstance:
     - target: {fileID: 1298102938786290, guid: 782a3c7c0d4094240b06472087244366, type: 3}
       propertyPath: m_Name
       value: Tube_Destroyed_End_4x4x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298102938786290, guid: 782a3c7c0d4094240b06472087244366, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4590217691539262, guid: 782a3c7c0d4094240b06472087244366, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2434,6 +2514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner_1x05x05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1797317119218536, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4546008412128554, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.28
@@ -2504,6 +2588,10 @@ PrefabInstance:
     - target: {fileID: 1942348164569940, guid: 53c0f5b99c4af484793939e534c558b5, type: 3}
       propertyPath: m_Name
       value: Crate_1x1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1942348164569940, guid: 53c0f5b99c4af484793939e534c558b5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317664735389580, guid: 53c0f5b99c4af484793939e534c558b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2576,6 +2664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1431126234999594, guid: 0f537530c709a4441b484cb88eeddfc1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4497129403897590, guid: 0f537530c709a4441b484cb88eeddfc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.001001
@@ -2644,6 +2736,10 @@ PrefabInstance:
     - target: {fileID: 1027252860283590, guid: 755a67063e14af9489ca84a530bad37b, type: 3}
       propertyPath: m_Name
       value: Pebbles_Small_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027252860283590, guid: 755a67063e14af9489ca84a530bad37b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4547552862399284, guid: 755a67063e14af9489ca84a530bad37b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2716,6 +2812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Basic_1_Destroyed_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1386761097592482, guid: fb9aa1d2e5949f74281bbb9abcc6ef43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4617367684228950, guid: fb9aa1d2e5949f74281bbb9abcc6ef43, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.489546
@@ -2786,6 +2886,10 @@ PrefabInstance:
     - target: {fileID: 1879695940038250, guid: fd452f6fc5ec26c4aa87517d7568f1c7, type: 3}
       propertyPath: m_Name
       value: Pipe_Bend_1x05x05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879695940038250, guid: fd452f6fc5ec26c4aa87517d7568f1c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4949506233262168, guid: fd452f6fc5ec26c4aa87517d7568f1c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2858,6 +2962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.66
@@ -2920,6 +3028,10 @@ PrefabInstance:
     - target: {fileID: 1261893242606214, guid: bd432e35b09f21f4da16938567aa469a, type: 3}
       propertyPath: m_Name
       value: Pipe_TJunction_1x05x05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1261893242606214, guid: bd432e35b09f21f4da16938567aa469a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4243563044010268, guid: bd432e35b09f21f4da16938567aa469a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2991,6 +3103,10 @@ PrefabInstance:
     - target: {fileID: 1439141261821950, guid: eadc1f181a0ea7f4dbad918d2c86cfcc, type: 3}
       propertyPath: m_Name
       value: Block_Wall_Pillar_Cap_T1_1x05x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439141261821950, guid: eadc1f181a0ea7f4dbad918d2c86cfcc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4283113865677538, guid: eadc1f181a0ea7f4dbad918d2c86cfcc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3066,6 +3182,10 @@ PrefabInstance:
     - target: {fileID: 1110075495780990, guid: 313f0844e8b38a24182ca8d5b4edbfc1, type: 3}
       propertyPath: m_Name
       value: Rock_Block_3x2x3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110075495780990, guid: 313f0844e8b38a24182ca8d5b4edbfc1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4441079118139094, guid: 313f0844e8b38a24182ca8d5b4edbfc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3402,6 +3522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner_1x05x05
       objectReference: {fileID: 0}
+    - target: {fileID: 1797317119218536, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4546008412128554, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.571
@@ -3472,6 +3596,10 @@ PrefabInstance:
     - target: {fileID: 1309161493859314, guid: 52fc1feda96b98e41ab92655ff3db6aa, type: 3}
       propertyPath: m_Name
       value: Pebbles_Small_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309161493859314, guid: 52fc1feda96b98e41ab92655ff3db6aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4612332986712360, guid: 52fc1feda96b98e41ab92655ff3db6aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3544,6 +3672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pebbles_Small_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1712537248157022, guid: 759ebc4812737b145aa4903f7b68a5d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4769637757903516, guid: 759ebc4812737b145aa4903f7b68a5d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -87.574875
@@ -3614,6 +3746,10 @@ PrefabInstance:
     - target: {fileID: 1587895198877838, guid: 0012e0e78b8abb14f920d8cf5a8722a1, type: 3}
       propertyPath: m_Name
       value: Abstarct_Gate_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587895198877838, guid: 0012e0e78b8abb14f920d8cf5a8722a1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4777475082688792, guid: 0012e0e78b8abb14f920d8cf5a8722a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3690,6 +3826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_5_Alt_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1320799798270970, guid: c2f82920fcde24441a93870912e6d146, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4740132695455792, guid: c2f82920fcde24441a93870912e6d146, type: 3}
       propertyPath: m_LocalPosition.x
       value: 117.89
@@ -3764,6 +3904,10 @@ PrefabInstance:
     - target: {fileID: 1540580164119122, guid: ee505717dd4d19749bb357c7a419a2c6, type: 3}
       propertyPath: m_Name
       value: Pebbles_Med_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540580164119122, guid: ee505717dd4d19749bb357c7a419a2c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4561465143716638, guid: ee505717dd4d19749bb357c7a419a2c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3865,6 +4009,10 @@ PrefabInstance:
     - target: {fileID: 1721355357383690, guid: cd1ab00f56eecbe478f861e608966500, type: 3}
       propertyPath: m_Name
       value: Fence_Basic_2_Destroyed_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721355357383690, guid: cd1ab00f56eecbe478f861e608966500, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4507211788967344, guid: cd1ab00f56eecbe478f861e608966500, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4057,6 +4205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Doorway_025x3x4
       objectReference: {fileID: 0}
+    - target: {fileID: 1992606258111534, guid: e1beff011e6e09c43b39aa639d2136f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4861233332585266, guid: e1beff011e6e09c43b39aa639d2136f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.668
@@ -4136,6 +4288,10 @@ PrefabInstance:
     - target: {fileID: 1032839097550598, guid: d536454e5cc5dea47811d9ee8a8e1f25, type: 3}
       propertyPath: m_Name
       value: Pebbles_Large_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032839097550598, guid: d536454e5cc5dea47811d9ee8a8e1f25, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4895646167510622, guid: d536454e5cc5dea47811d9ee8a8e1f25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4238,6 +4394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_025x2x4 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1339060459476100, guid: 93c085334f50f9945b11554ed7978063, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4106337375065928, guid: 93c085334f50f9945b11554ed7978063, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.36
@@ -4308,6 +4468,10 @@ PrefabInstance:
     - target: {fileID: 1256303574512094, guid: 21087b2714221cb449a93200cfd9ce4e, type: 3}
       propertyPath: m_Name
       value: Tube_Half_Hole_Small_8x4x8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256303574512094, guid: 21087b2714221cb449a93200cfd9ce4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4685768455748340, guid: 21087b2714221cb449a93200cfd9ce4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4384,6 +4548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_4_Alt_2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.52
@@ -4450,6 +4618,10 @@ PrefabInstance:
     - target: {fileID: 1400615557296742, guid: 57ca45058fdfed84dba81242d8469420, type: 3}
       propertyPath: m_Name
       value: Tube_Half_Destroyed_End_4x2x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400615557296742, guid: 57ca45058fdfed84dba81242d8469420, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4339473368748624, guid: 57ca45058fdfed84dba81242d8469420, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4525,6 +4697,10 @@ PrefabInstance:
     - target: {fileID: 1605300832403718, guid: 62a95d56d3a90164eb97068188d0ced3, type: 3}
       propertyPath: m_Name
       value: Rock_Flatbottom_Med_T2_4x4x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605300832403718, guid: 62a95d56d3a90164eb97068188d0ced3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439660708229000, guid: 62a95d56d3a90164eb97068188d0ced3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4630,6 +4806,10 @@ PrefabInstance:
     - target: {fileID: 1505681167648366, guid: 96d0d6b6fcc3be04eb15060b275c9e41, type: 3}
       propertyPath: m_Name
       value: Rock_Block_4x4x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505681167648366, guid: 96d0d6b6fcc3be04eb15060b275c9e41, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4001566493794956, guid: 96d0d6b6fcc3be04eb15060b275c9e41, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4892,6 +5072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_3x05x05
       objectReference: {fileID: 0}
+    - target: {fileID: 1062884370196510, guid: a1da3519eda359c42946accac5e35296, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4077470925958532, guid: a1da3519eda359c42946accac5e35296, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.8096733
@@ -4962,6 +5146,10 @@ PrefabInstance:
     - target: {fileID: 1439377294823108, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
       propertyPath: m_Name
       value: Rock_Flatbottom_large_T1_6x6x6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439377294823108, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4191023619035368, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5037,6 +5225,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
       propertyPath: m_Name
       value: Wires_Haging_Large_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7c4c327a4564c58489de471d9dbb3799, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5131,6 +5323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_025x2x4 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1339060459476100, guid: 93c085334f50f9945b11554ed7978063, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4106337375065928, guid: 93c085334f50f9945b11554ed7978063, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.63
@@ -5201,6 +5397,10 @@ PrefabInstance:
     - target: {fileID: 1408637862669898, guid: 4b6300fd360357e47b3024b7d6b70f4c, type: 3}
       propertyPath: m_Name
       value: Wall_Destoryed_End_T2_025x3x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408637862669898, guid: 4b6300fd360357e47b3024b7d6b70f4c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4475134011051208, guid: 4b6300fd360357e47b3024b7d6b70f4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5282,6 +5482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Cross_1x05x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1616542395205302, guid: f8101ae0d4429704497b09faf570d1d4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4206824234597406, guid: f8101ae0d4429704497b09faf570d1d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.8044815
@@ -5352,6 +5556,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_Name
       value: Wires_Haging_Large_4_Alt_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5573,6 +5781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Wall_Pillar_T1_1x4x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1768451325608854, guid: a48d39ce72abf514aacfeb93af3918d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4722418744417278, guid: a48d39ce72abf514aacfeb93af3918d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.62
@@ -5736,6 +5948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Block_1x3x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1678177686685800, guid: 0ab64c599c90cd74fbfed838eba81136, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4558290229124144, guid: 0ab64c599c90cd74fbfed838eba81136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -85.876785
@@ -5807,6 +6023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_Bend_Alt2_1x3x3
       objectReference: {fileID: 0}
+    - target: {fileID: 1624190030489242, guid: 756a3e5b559a1f048a1ac7573e2ffa0f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4911898163123478, guid: 756a3e5b559a1f048a1ac7573e2ffa0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -5871,6 +6091,10 @@ PrefabInstance:
     - target: {fileID: 1864942428261362, guid: a2c0e84faee39d44a9f1f86acf6a3035, type: 3}
       propertyPath: m_Name
       value: Fence_Basic_1_Destroyed_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864942428261362, guid: a2c0e84faee39d44a9f1f86acf6a3035, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4021807364946598, guid: a2c0e84faee39d44a9f1f86acf6a3035, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6034,6 +6258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner_1x05x05
       objectReference: {fileID: 0}
+    - target: {fileID: 1797317119218536, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4546008412128554, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.28
@@ -6196,6 +6424,10 @@ PrefabInstance:
     - target: {fileID: 1999593653632672, guid: c92efa0c1f6519e4181d09b1b9c5b645, type: 3}
       propertyPath: m_Name
       value: Rock_large_T1_4x6x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999593653632672, guid: c92efa0c1f6519e4181d09b1b9c5b645, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4442162447551780, guid: c92efa0c1f6519e4181d09b1b9c5b645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6366,6 +6598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tube_8x8x8
       objectReference: {fileID: 0}
+    - target: {fileID: 1251581225358532, guid: efb9bd5eed1e70e4db9a0895e90bf952, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4158878995938674, guid: efb9bd5eed1e70e4db9a0895e90bf952, type: 3}
       propertyPath: m_LocalPosition.x
       value: 52.282352
@@ -6466,6 +6702,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_Name
       value: Wires_Haging_Large_4_Alt_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6578,6 +6818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Aircon_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1355149428836982, guid: 74d3a8cd1112f234593744d577d2ca7a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4020020069475178, guid: 74d3a8cd1112f234593744d577d2ca7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.13
@@ -6640,7 +6884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1833658162}
   m_Layer: 0
-  m_Name: PLocationParent
+  m_Name: P Locations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6700,6 +6944,10 @@ PrefabInstance:
     - target: {fileID: 1797317119218536, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
       propertyPath: m_Name
       value: Pipe_Corner_1x05x05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797317119218536, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4546008412128554, guid: bf34621e2dc69654ab354149a65170ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6771,6 +7019,10 @@ PrefabInstance:
     - target: {fileID: 1117658706320664, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
       propertyPath: m_Name
       value: Tube_90_Corner_10x8x10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117658706320664, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4548269209751908, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6847,6 +7099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Flatbottom_Small_T2_2x2x2
       objectReference: {fileID: 0}
+    - target: {fileID: 1007832214144516, guid: 418c42809bb984d46a62d4a0af1aa057, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4861917720200598, guid: 418c42809bb984d46a62d4a0af1aa057, type: 3}
       propertyPath: m_LocalPosition.x
       value: 181.24489
@@ -6917,6 +7173,10 @@ PrefabInstance:
     - target: {fileID: 1439377294823108, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
       propertyPath: m_Name
       value: Rock_Flatbottom_large_T1_6x6x6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439377294823108, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4191023619035368, guid: 203b8555d7867794da05a30720e5c70b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7160,6 +7420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wires_Haging_Large_4_Alt_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b69fb850fcd2f674f8e36cae1085da03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.25
@@ -7234,6 +7498,10 @@ PrefabInstance:
     - target: {fileID: 1834291347767560, guid: 2906bc9a938a35c4a9b8e39129b220cf, type: 3}
       propertyPath: m_Name
       value: Abstarct_Gate_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834291347767560, guid: 2906bc9a938a35c4a9b8e39129b220cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4088375575926276, guid: 2906bc9a938a35c4a9b8e39129b220cf, type: 3}
       propertyPath: m_LocalPosition.x
