@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 	public SceneTransitionScript transition;
 	public GameObject main;
 	public GameObject settings;
+    public GameObject controls;
+    public GameObject credits;
     public GameObject mainCanvas;
     public GameObject iteratorCanvas;
 	public Slider music;
@@ -17,13 +19,33 @@ public class MainMenu : MonoBehaviour
 	{
 		main.SetActive(true);
 		settings.SetActive(false);
+        controls.SetActive(false);
+        credits.SetActive(false);
 	}
 
 	public void ToggleSettingsMenu()
 	{
-		settings.SetActive(true);
-		main.SetActive(false);
-	}
+        main.SetActive(false);
+        settings.SetActive(true);
+        controls.SetActive(false);
+        credits.SetActive(false);
+    }
+
+    public void ToggleControlsMenu()
+    {
+        main.SetActive(false);
+        settings.SetActive(false);
+        controls.SetActive(true);
+        credits.SetActive(false);
+    }
+
+    public void ToggleCreditsMenu()
+    {
+        main.SetActive(false);
+        settings.SetActive(false);
+        controls.SetActive(false);
+        credits.SetActive(true);
+    }
 
 	public void StartGame()
 	{
