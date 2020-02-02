@@ -6,7 +6,8 @@ public class SpawnManager : MonoBehaviour
 {
     public static SpawnManager Instance { get; private set; }
 
-    public List<Transform> receptacleLocations;
+    public Transform RLocationParent;
+    List<Transform> receptacleLocations = new List<Transform>();
     public List<Transform> partLocations;
     public List<GameObject> receptacles;
     public List<GameObject> parts;
@@ -38,15 +39,19 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("r")) RepairOccurred(testRecep, testPart);
-        if (Input.GetKeyDown("t")) TriggerNewPartSpawn();
+        //if (Input.GetKeyDown("r")) RepairOccurred(testRecep, testPart);
+        //if (Input.GetKeyDown("t")) TriggerNewPartSpawn();
     }
 
     void GenerateReceptacles()
     {
         // Instantiate receptacle in each location
         //  with corresponding rotation
-        for (var i = 0; i < receptacleLocations.Count; i++)
+        for (var i = 0; i < RLocationParent.childCount; i++)
+        {
+            receptacleLocations.Add(RLocationParent.GetChild(i));
+        }
+            for (var i = 0; i < receptacleLocations.Count; i++)
         {
             var r = Instantiate(receptacles[Random.Range(0, receptacles.Count)]);
             r.transform.position = receptacleLocations[i].position;
